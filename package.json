@@ -4,7 +4,7 @@
   "description": "",
   "main": "web.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon web.js",
     "db-init": "node db-creation.js"
   },
   "keywords": [],
