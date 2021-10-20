@@ -4,11 +4,11 @@ const router = express.Router()
 const conn = require('../db')
 
 router.get('/venues', async (req, res) => {
+  console.log(conn)
   const venues = await conn.raw(`SELECT * FROM venues
   order by id
   ;`)
   res.json(venues.rows)
-  console.log(conn)
 })
 
 router.get('/venues/newbars', async (req, res) => {

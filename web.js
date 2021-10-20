@@ -18,9 +18,11 @@ const labelsRoutes = require('./routes/labels')
 const happy_hrRoutes = require('./routes/happy_hr')
 const galleriesRoutes = require('./routes/galleries')
 const recommendationsRoutes = require('./routes/recommendations')
+const conn = require('../db')
 
 app.get('/', (req, res) => {
   res.send('hello world')
+  console.log(conn)
 })
 
 app.use('/api', adminsRoutes)
