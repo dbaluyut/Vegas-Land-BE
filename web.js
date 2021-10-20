@@ -33,5 +33,5 @@ app.use('/api/', happy_hrRoutes)
 app.use('/api/', galleriesRoutes)
 app.use('/api', recommendationsRoutes)
 app.listen(PORT, () => {
-  console.log('running on port 5000')
+  console.log('running on port ' + PORT)
 })
