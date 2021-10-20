@@ -3,7 +3,7 @@ const express = require('express')
 const jwtMiddleware = require('express-jwt')
 const jwtToken = require('jsonwebtoken')
 const app = express()
-const PORT = 5000
+const PORT = 5432
 // const exampleRoutes = require("./routes/example");
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
@@ -29,5 +29,5 @@ app.use('/api/', happy_hrRoutes)
 app.use('/api/', galleriesRoutes)
 app.use('/api', recommendationsRoutes)
 app.listen(PORT, () => {
-  console.log('running on port 5000')
+  console.log('running on port 5432')
 })
