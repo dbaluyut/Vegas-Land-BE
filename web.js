@@ -21,6 +21,7 @@ const recommendationsRoutes = require('./routes/recommendations')
 
 app.get('/', (req, res) => {
   res.send('hello world')
+  console.log(conn)
 })
 
 app.use('/api', adminsRoutes)
